@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     import jq from 'jquery';
-    import initMathquill from '$lib/mathquill/mathquill.js';
+    import initMathquill from '$lib/latex/mathquill.js';
 
     let problemSpan;
     let answerSpan;
@@ -24,6 +24,6 @@
 </script>
 
 <p>
-    Solve <span id="problem" bind:this={problemSpan}>ax^2 + bx + c = 0</span>:
+    <span id="problem" bind:this={problemSpan}>{`\\textrm{Solve}\\ ax^2 + bx + c = 0`}</span>:
     <span id="answer" bind:this={answerSpan}>x=</span>
 </p>
