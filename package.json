@@ -20,6 +20,7 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "jquery": "^3.6.0",
     "neo4j-driver": "^4.3.2"
   }
 }
